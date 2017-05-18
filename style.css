@@ -1,3 +1,300 @@
+/**
+ * = BASE
+ */
+
 html {
-  font-family: 'Catamaran', sans-serif;  
+  font-family: 'Catamaran', sans-serif;
+  line-height: 1.35;
+  color: #6d6169;
 }
+
+a {
+  color: #4b82ff;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  vertical-align: middle;
+}
+
+a:after {
+  content: '';
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 3px;
+  left: 0;
+  border-bottom: 2px solid #4b82ff;
+  transition: .25s;
+}
+
+a:hover:after {
+  transform: translate(0, 3px);
+  opacity: 0;
+}
+
+h3 {
+  font-size: 24px;
+  color: #2c1e28;
+}
+
+abbr[title] {
+  border-bottom: none;
+  text-decoration: none;
+  position: relative;
+}
+
+abbr[title]:after {
+  content: '';
+  width: 100%;
+  display: block;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  border-bottom: 1px dashed #e5e5e5;
+}
+
+/**
+ * = WRAPPER
+ */
+
+.c-wrapper {
+  max-width: 1030px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/**
+ * = TOP-BAR
+ */
+
+.c-top-bar {
+  background-color: #fff;
+  box-shadow: 0 1px 0 rgba(0,0,0, .1);
+  padding: 26px 0;
+}
+
+.c-top-bar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+@media screen and (min-width: 960px) {
+  .c-top-bar__inner > * + * {
+    margin-left: 15px;
+  }
+}
+
+/**
+ * = HEADER
+ */
+
+.c-header {
+  display: none;
+}
+
+/**
+ * = MAIN
+ */
+
+.c-main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c-main__column {
+  width: 100%;
+}
+
+ @media screen and (min-width: 960px) {
+   .c-main__column--left {
+     flex-basis: 40%;
+   }
+
+   .c-main__column--right {
+     flex-basis: 50%;
+     margin-left: auto;
+   }
+ }
+
+/**
+ * = SCHEDULE
+ */
+
+.c-schedule__item {
+  display: flex;
+}
+
+.c-schedule__item + * {
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.c-schedule__time {
+  color: #2c1e28;
+  font-weight: bold;
+  flex-basis: 120px;
+}
+
+/**
+ * = PROGRES-BAR
+ */
+
+.c-progress-bar {
+  display: block;
+  height: 12px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.c-progress-bar__indicator {
+  height: inherit;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffa646;
+}
+
+.c-progress-bar--red .c-progress-bar__indicator {
+  background-color: #ff6749;
+}
+
+.c-progress-bar--mute .c-progress-bar__indicator {
+  opacity: .5;
+}
+
+/**
+ * = LIST
+ */
+
+.c-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.c-list__item + * {
+  margin-top: 20px;
+}
+
+/**
+ * = AVATAR-LIST
+ */
+
+.c-avatar-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -20px;
+  max-width: 370px;
+}
+
+.c-avatar-list__item {
+  flex-basis: 25%;
+  margin-top: 20px;
+}
+
+.c-avatar-list i {
+  border-radius: 50%;
+  display: block;
+  width: 70px;
+  height: 70px;
+  background-color: #f8f8f8;
+}
+
+/**
+ * = BTN
+ */
+
+.c-btn {
+  display: inline-block;
+  background-color: #ff6749;
+  color: #fff;
+  font-size: 18px;
+  padding: 13px 42px;
+  border-radius: 30px;
+  transition: .25s;
+}
+
+.c-btn:hover {
+  background-color: #ff7944;
+  transform: scale(1.1);
+}
+
+.c-btn:active {
+  background-color: #ea6f3e;
+  transform: scale(.95);
+}
+
+/**
+ * = FOOTER
+ */
+
+.c-footer {
+  background-color: #2c1e28;
+  padding: 30px 0;
+  color: #867d83;
+  margin-top: 105px;
+}
+
+.c-footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.c-footer a:not(.c-btn) {
+  font-weight: normal;
+  color: #a59fa3;
+}
+
+.c-footer .c-btn {
+  margin-bottom: 30px;
+}
+
+.c-footer a:after {
+  content: none;
+}
+
+@media screen and (min-width: 960px) {
+  .c-footer__inner {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/**
+ * = HELPERS
+ */
+
+.u-normal   { font-weight: 400;  }
+.u-semibold { font-weight: 600; }
+
+.u-c-dark { color: #2c1e28; }
+.u-c-default { color: #6c6068; }
+
+.u-ml-- { margin-left: 8px; }
+.u-ml- { margin-left: 15px; }
+.u-ml { margin-left: 30px; }
+.u-ml\+ { margin-left: 45px; }
+.u-ml\+\+ { margin-left: 70px; }
+
+.u-mt-- { margin-top: 8px; }
+.u-mt- { margin-top: 15px; }
+.u-mt { margin-top: 30px; }
+.u-mt\+ { margin-top: 45px; }
+.u-mt\+\+ { margin-top: 70px; }
+
+.u-alpha { font-size: 32px; }
+.u-beta { font-size: 28px; }
+.u-gamma { font-size: 24px; line-height: 32px; }
+.u-delta { font-size: 20px; }
+.u-epsilon { font-size: 18px; line-height: 26px; }
+.u-zeta { font-size: 16px; }
