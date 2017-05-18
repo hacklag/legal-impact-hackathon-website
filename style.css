@@ -267,7 +267,8 @@ abbr[title]:after {
   margin-top: 20px;
 }
 
-.c-avatar-list i {
+.c-avatar-list i,
+.c-avatar-list img {
   border-radius: 50%;
   display: block;
   width: 70px;
