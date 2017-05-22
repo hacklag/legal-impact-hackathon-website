@@ -75,14 +75,13 @@ abbr[title]:after {
   position: relative;
   box-shadow: 0 1px 0 rgba(0,0,0, .1);
   padding: 26px 0;
+  margin-left: -15px;
 }
 
 .c-top-bar__inner {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: -15px;
-  padding: 0;
 }
 
 .c-top-bar__inner > * {
@@ -342,10 +341,6 @@ abbr[title]:after {
     flex-direction: row;
     justify-content: space-between;
     text-align: right;
-  }
-
-  .c-footer__center {
-    text-align: center;
   }
 
   .c-footer .c-btn {
