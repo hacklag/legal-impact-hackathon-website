@@ -343,10 +343,6 @@ abbr[title]:after {
     text-align: right;
   }
 
-  .c-footer__center {
-    text-align: center;
-  }
-
   .c-footer .c-btn {
     margin-bottom: 0;
   }
