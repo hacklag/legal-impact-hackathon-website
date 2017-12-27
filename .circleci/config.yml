@@ -23,7 +23,7 @@ jobs:
           paths:
             - ~/repo
 
-  deploy_docs:
+  deploy:
     name: Deploying Docs
     docker:
       - image: circleci/node:latest
