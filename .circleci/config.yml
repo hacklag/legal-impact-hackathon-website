@@ -34,7 +34,7 @@ jobs:
       - restore_cache:
           key: v1-repo-{{ .Environment.CIRCLE_SHA1 }}
       - run: npx s deploy
-      - run: npx s sync staging
+      - run: npx s hosting sync staging
 
 
 workflows:
