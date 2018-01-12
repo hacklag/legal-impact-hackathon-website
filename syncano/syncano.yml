@@ -1,3 +1,9 @@
 hosting:
   staging:
     src: ../web
+    auth:
+      user1: pass1
+  test:
+    src: ../web
+    config:
+      browser_router: true
