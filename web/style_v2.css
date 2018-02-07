@@ -432,6 +432,9 @@ abbr[title]:after {
   -ms-flex-align: center;
   align-items: center;
 }
+.partners a:after {
+  display: none;
+}
 .partners img {
   display: block;
   -webkit-box-flex: 0;
