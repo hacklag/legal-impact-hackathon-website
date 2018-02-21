@@ -514,7 +514,7 @@ h1 {
   font-size: 58px; }
 
 .slack {
-  margin-bottom: 15px; }
+  margin: 15px 0; }
   .slack__email {
     display: block;
     padding: 8px;
