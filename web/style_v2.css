@@ -9,7 +9,7 @@ html {
 }
 
 a {
-  color: #4b82ff;
+  color: #5C1699;
   font-weight: bold;
   text-decoration: none;
   position: relative;
@@ -23,7 +23,7 @@ a:after {
   position: absolute;
   bottom: 3px;
   left: 0;
-  border-bottom: 2px solid #4b82ff;
+  border-bottom: 2px solid #5C1699;
   transition: 0.25s;
 }
 
