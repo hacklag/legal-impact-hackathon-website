@@ -1,5 +1,5 @@
 {
   "devDependencies": {
-    "@syncano/cli": "canary"
+    "@syncano/cli": "0.13.0-alpha.f6ea95d4"
   }
 }
